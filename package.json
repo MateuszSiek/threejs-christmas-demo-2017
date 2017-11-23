@@ -1,0 +1,31 @@
+{
+ "name": "christmas-threejs",
+ "version": "1.0.0",
+ "description": "A basic example of how to import from Blender multiple animated 3D models with three.js",
+ "main": "index.js",
+ "scripts": {
+  "start": "concurrently --kill-others \"http-server\" \"webpack\"",
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "author": "",
+ "license": "ISC",
+ "devDependencies": {
+  "@types/three": "^0.84.29",
+  "awesome-typescript-loader": "^3.3.0",
+  "codelyzer": "^4.0.1",
+  "concurrently": "^3.5.0",
+  "http-server": "^0.10.0",
+  "source-map-loader": "^0.2.3",
+  "typescript": "^2.6.1",
+  "webpack": "^3.8.1"
+ },
+ "dependencies": {
+  "postprocessing": "^3.1.0",
+  "three": "^0.88.0",
+  "three-addons": "^1.1.0",
+  "three-effectcomposer-es6": "0.0.4",
+  "three-first-person-controls": "^0.2.1",
+  "three-orbit-controls": "^82.1.0",
+  "three-pointerlock": "0.0.2"
+ }
+}

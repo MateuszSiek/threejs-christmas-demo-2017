@@ -1,0 +1,100 @@
+html {
+    font-size: 10px;
+}
+@media only screen and (min-width: 500px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 728px) {
+    html {
+        font-size: 16px;
+    }
+}
+/*@media only screen and (max-width: 1024px) {*/
+    /*html {*/
+        /*font-size: 12px;*/
+    /*}*/
+/*}*/
+
+body {
+    font-family: 'Amatic SC', cursive;
+    margin: 0px;
+    overflow: hidden;
+    background: #1498e8;
+}
+
+#container {
+    display: block;
+    animation: appear 1s;
+}
+
+#container canvas {
+    cursor: move;
+}
+
+body.loading #container {
+    display: none;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.user-interface {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.user-interface button {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+    letter-spacing: 0.8rem;
+    padding: 0.7rem 5rem;
+    margin-bottom: 1rem;
+    background: #63636314;
+    border: 1px solid;
+    outline: none;
+}
+
+.user-interface button:hover {
+    background: #ffffff66;
+    cursor: pointer;
+}
+
+.user-interface .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.8;
+}
+
+.wishes {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    letter-spacing: 2rem;
+    color: #ff0043;
+    text-shadow: 0px 0px 4px #0000008f;
+}
+
+body.loading .user-interface, body.loading .wishes {
+    opacity: 0;
+}
+
+body:not(.loading) .user-interface, body:not(.loading) .wishes {
+    animation: appear 1s forwards;
+}
