@@ -5,6 +5,8 @@ All models and animations were created in blender and exported as json models.
 
 [Live demo](http://xmas.msiek.com/)
 
+<img width="1661" alt="screenshot 2018-01-07 20 19 17" src="https://user-images.githubusercontent.com/16710005/34653738-176d93fe-f3e8-11e7-875f-1348e6f256b8.png">
+
 ### Development setup
 First install all dependencies
 ```

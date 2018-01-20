@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+node_modules
+._*
+.idea
+models/blender
+src
+package.json
+package-lock.json
+README.md
+tsconfig.json
+tslint.json
+webpack.config.js
+Dockerfile
+LICENSE
